@@ -11,6 +11,7 @@ body {
 header {
      background-color: #fff978;
      padding: 0.5rem 20px;
+     display: flex;
 }
 
 /*make it bigger and give it a new color*/
