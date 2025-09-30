@@ -1,0 +1,321 @@
+*{box-sizing: border-box;}
+
+/*establish font and make the text touch the edge*/
+body {
+     font-family: "Cormorant Upright", serif;
+     margin: 0;
+}
+
+/*header stuff here!!!*/
+/*make backgroud color and scoot it to the right a bit*/
+header {
+     background-color: #fff978;
+     padding: 0.5rem 20px;
+}
+
+/*make it bigger and give it a new color*/
+header span {
+     color: #c22429;
+     font-size: 2.5rem;
+     font-weight: 700;
+}
+
+/*nav stuff here!!!*/
+/*small screen*/
+@media only screen and (max-width:600px) {
+     nav ul {
+     margin: 0;
+     padding: 0;
+     }
+
+     nav a {
+          display: block;
+          text-align: center;
+          padding: 1rem;
+          color: #cb5f12;
+          text-decoration: none;
+          border-bottom: solid 1px #e7e7e7;
+          font-weight: 700;
+          text-transform: uppercase;
+     }
+     nav a:hover {
+          color: #3056df;
+     }
+
+     nav .active a {
+          background-color: #cb5f12;
+          color: #e7e7e7;
+          background-image: linear-gradient(to bottom, #cb5f12, #c22429);
+     }
+
+     nav .active a:hover {
+          color: #fff978;
+     }
+
+} /*end of small*/
+
+/*LARGE SREEN*/
+@media only screen and (min-width:601px) {
+ nav {
+     background-color: #cb5f12;
+}
+
+nav ul {
+     margin: 0;
+     padding: 0 20px;
+     list-style-type: none;
+     display: flex;
+}
+
+nav a {
+     display: block;
+     padding: 1rem 20px;
+     text-decoration: none;
+     font-size: 1.7rem;
+     font-weight: 700;
+     color: #e7e7e7;
+}
+
+nav li.active a {
+     background-color: #e7e7e7;
+     color: #cb5f12;
+}
+
+nav li a:hover {
+     color: #fff978;
+}
+
+nav li.active a:hover {
+     color: #3056df;
+}
+
+} /*end of LARGE*/
+
+    
+
+
+/*main stuff here!!!*/
+main {
+     padding: 1rem 20px;
+}
+
+main h1 {
+     color: #3056df;
+     font-weight: 700;
+}
+
+main h2 {
+     color: #c22429;
+     margin-bottom: 0.1rem;
+     font-weight: 700;
+}
+
+main h3 {
+     color: #c22429;
+     margin-bottom: 0.1rem;
+     font-weight: 700;
+     font-size: 1.2rem;
+}
+
+main p {
+     margin: 0;
+     color: #333;
+     font-weight: 700;
+}
+
+main ol {
+     padding: 0.5rem 20px;
+     background-color: #fff978;
+     font-weight: 700;
+     color: #c22429;
+     border: 1px solid #c22429;
+     border-radius: 5px;
+     width: 825px;
+}
+
+main ol li ul {
+     color: #333;
+}
+
+main dl {
+     font-weight: 700;
+     color: #c22429;
+}
+
+main dl dt {
+     font-size: 1.2rem;
+     margin-top: 1rem;
+}
+
+main dl dd {
+     color: #333;
+     margin-left: 20px;
+}
+
+main ul {
+     list-style-type: circle;
+     font-weight: 700;
+     color: #333;
+}
+
+main strong {
+     color: black;
+}
+
+main p strong {
+     font-size: 1.2rem;
+     color: #cb5f12;
+     margin: 0 20px;
+}
+
+main em {
+     font-weight: 500;
+}
+
+main address {
+     font-style: normal;
+     margin: 1rem 20px;
+     background-color: #fff978;
+     color: #333;
+     font-weight: 500;
+     font-size: 1.1rem;
+     border: 1px solid #c22429;
+     border-radius: 5px;
+     width: 150px;
+}
+
+main address a {
+     color: #3056df;
+}
+
+main address a:hover {
+     color: #cb5f12;
+}
+
+.hero {
+     width: 100%;
+     height: auto;
+     border: 1px solid #c22429;
+     border-radius: 5px;
+}
+
+/*index image here*/
+figure.first {
+     margin: 0 0 10px 10px;
+     width: 40%;
+     float: right;
+}
+
+figure.first img {
+     width: 100%;
+     height: auto;
+     border: 1px solid #c22429;
+     border-radius: 5px;
+}
+
+figure.first figcaption {
+     text-align: center;
+     background-color: #fff978;
+     color: #3056df;
+     font-weight: 700;
+     border: 1px solid #c22429;
+     border-radius: 5px;
+}
+
+/*gallery images here*/
+div.cheese {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px 30px;
+}
+div.cheese figure {
+     margin: 0;
+}
+div.cheese img {
+     border: 1px solid #c22429;
+     border-radius: 5px;
+}
+img:hover {
+     box-shadow: 0px 0px 10px #333;
+}
+div.cheese figcaption {
+     text-align: center;
+     background-color: #fff978;
+     color: #3056df;
+     font-weight: 700;
+     border: 1px solid #c22429;
+     border-radius: 5px;
+}
+
+/*order stuff here!!!*/
+.cheeseOrder fieldset {
+     border: 1px solid #c22429;
+     background-color: #fff978;
+     border-radius: 5px;
+     margin-bottom: 1rem;
+}
+.cheeseOrder legend {
+     color: #3056df;
+     font-size: 1rem;
+     font-weight: 700;
+}
+.cheeseOrder label {
+     margin: 0.5rem;
+}
+.cheeseOrder label, .cheeseOrder [type=text], .cheeseOrder [type=tel], .cheeseOrder [type=email] {
+     display: block;
+     color: #3056df;
+     font-weight: 700;
+}
+.cheeseOrder label:hover, .cheeseOrder [type=text]:hover, .cheeseOrder [type=tel]:hover, .cheeseOrder [type=email]:hover {
+     color: #c22429;
+}
+.cheeseOrder [type=text], .cheeseOrder [type=tel], .cheeseOrder [type=email], .cheeseOrder select, .cheeseOrder textarea {
+     border: solid 2px #c22429;
+     background-color: #e7e7e7;
+     padding: 0.5rem;
+     border-radius: 5px;
+     width: 225px;
+     font-family: "Cormorant Upright", serif;
+     font-weight: 700;
+     font-size: 1rem;
+}
+.cheeseOrder textarea {
+     height: 6rem;
+}
+.cheeseOrder [type=submit] {
+     background-color: #cb5f12;
+     border: none;
+     padding: 1rem 2rem;
+     border-radius: 10px;
+     color: #e7e7e7;
+     font-family: "Cormorant Upright", serif;
+     font-size: 1rem;
+     font-weight: 700;
+     margin: 1rem 0 0 1rem;
+}
+.cheeseOrder [type=submit]:hover {
+     color: #fff978;
+}
+
+
+/*footer stuff here!!!*/
+footer {
+     background-color: #e7e7e7;
+     text-align: center;
+     padding: 1rem 0;
+     clear: both;
+}
+
+footer p {
+     margin: 0;
+     font-size: 1rem;
+     font-weight: 500;
+     color: #333;
+     letter-spacing: 2px;
+}
+
+header, nav, main, footer {
+     max-width: 64rem;
+     margin: 0 auto;
+}
