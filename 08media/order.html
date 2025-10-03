@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jacen Thompson">
+    <meta name="description" content="Learn about and enjoy cheese">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="flair.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>The Big Cheese: Order Cheese</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <img class="logo" src="cheese-pics/Big_Cheese_Logo.png" alt="The Big Cheese company logo" width="100" height="77">
+        <span>The Big Cheese</span>
+
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Know Your Cheese</a></li>
+            <li><a href="catalouge.html">Foods and Tools for Cheese</a></li>
+            <li><a href="gallery.html">Cheese Gallery</a></li>
+            <li class="active"><a href="order.html">Order Cheese</a></li>
+            <li><a href="price.html">Cheese Prices</a></li>
+            <li><a href="more.html">More from Us</a></li>
+        </ul>
+
+    </nav>
+
+    <!--start the main content-->
+    <main>
+        <h1>Order Cheese</h1>
+        <form method="get" class="cheeseOrder" action="thank-you.html">
+            <fieldset>
+                <legend>Your Informtion</legend>
+                <label>First Name* <input type="text" name="1stname" required placeholder="Jacen"></label>
+                <label>Last Name* <input type="text" name="2ndname" required placeholder="Thompson"></label>
+                <label>Address* <input type="text" name="address" required placeholder="243373 Limburg Ave"></label>
+                <label>City and State* <input type="text" name="city/state" required placeholder="Orem, UT"></label>
+                <label>Zip Code* <input type="text" name="zip" required placeholder="84058"></label>
+                <label>Phone Number* <input type="tel" name="phone#" required placeholder="801-243-3737"></label>
+                <label>Email <input type="email" name="email" placeholder="thebigcheeseofficial@gmail.com"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Our Cheese Selection</legend>
+                <label><input type="radio" name="cheese" value="brie">Brie</label>
+                <label><input type="radio" name="cheese" value="cheddar">Cheddar</label>
+                <label><input type="radio" name="cheese" value="gouda">Gouda</label>
+                <label><input type="radio" name="cheese" value="havarti">Havarti</label>
+                <label><input type="radio" name="cheese" value="mozzarella">Mozzarela</label>
+                <label><input type="radio" name="cheese" value="muenster">Muenster</label>
+                <label><input type="radio" name="cheese" value="parmesan">Parmesan</label>
+                <label><input type="radio" name="cheese" value="roquefort">Roquefort</label>
+                <label>
+                    <select name="age">
+                        <option value="none">Please Select Agedness</option>
+                        <option value="fresh">Fresh (1 month minimum)</option>
+                        <option value="6months">6-12 months</option>
+                        <option value="1yrs">1-2 years</option>
+                        <option value="2yrs">2+ years</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Equipment and Other Foods</legend>
+                <label><input type="checkbox" name="bread" value="picked">Breads & Crackers</label>
+                <label><input type="checkbox" name="fruit" value="picked">Fruits</label>
+                <label><input type="checkbox" name="nuts" value="picked">Nuts</label>
+                <label><input type="checkbox" name="meat" value="picked">Meats</label>
+                <label><input type="checkbox" name="condiment" value="picked">Spreads & Condiments</label>
+                <label><input type="checkbox" name="veggies" value="picked">Vegetables & Pickled Items</label>
+                <label><input type="checkbox" name="chocolate" value="picked">Chocolate</label>
+                <label><input type="radio" name="tool" value="pot" >Fondue Pot</label>
+                <label><input type="radio" name="tool" value="melter" >Raclette Melter</label>
+                <label><input type="radio" name="tool" value="girolle" >Girolle</label>
+                <label><input type="radio" name="tool" value="harp" >Cheese Harp</label>
+                <label><input type="radio" name="tool" value="fridge" >Cheese Fridge</label>
+                <label><input type="radio" name="tool" value="wire" >Cheese Wire</label>
+                <label><input type="radio" name="tool" value="pan" >Provoleta Pan</label>
+                <label><input type="radio" name="tool" value="stretch" >Mozzarela Stretching Trough</label>
+                <label><input type="radio" name="tool" value="cloche" >Cloche</label>
+                <label><input type="radio" name="tool" value="knife" >Almond Knife</label>
+            </fieldset>
+            <fieldset>
+                <legend>Special Requests and Comments</legend>
+                <label>
+                    <textarea name="reqeuests" placeholder="I would like.../Thank you for..."></textarea>
+                </label>
+            </fieldset>
+            
+            <input type="submit" value="Confirm Your Cheese Order">
+        </form>
+
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Jacen Thompson &bull; Web Essentials</p>
+
+    </footer>
+
+</body>
+
+</html>
